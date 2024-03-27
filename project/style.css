@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100vh;
+  width: 100%;
+  background: #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 70%;
+  padding: 0 10vw;
+  gap: 20px;
+}
+.people {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 1vw 2vw;
+  border: 1px solid #dadada;
+  outline: #dfa0a0;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  font-family: Poppins;
+}
+.img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 999px) {
+  #main {
+    height: 100vh;
+  }
+  .container {
+    padding: 0 7vw;
+  }
+  .people {
+    gap: 15px;
+  }
+  input {
+    padding: 0.5vw 2vw;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 650px) {
+  #main {
+    height: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  .people {
+    gap: 30px;
+  }
+  input {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    height: 100vh;
+  }
+  .container {
+    width: 100%;
+    padding: 0 2vw;
+  }
+  input {
+    width: 80%;
+    padding: 2vw 4vw;
+    font-size: 5vw;
+  }
+}
